@@ -25,23 +25,20 @@ export function SignupModal() {
           backdrop-blur-md
         "
         >
-          {/* Logo */}
           <div className="flex justify-center mb-2">
             <Image src="/logo.gif" alt="Forescribe" width={40} height={40} />
           </div>
 
-          {/* Heading */}
           <h1 className="text-white text-lg font-semibold mb-6 font-sans">
             Welcome to Forescribe
           </h1>
 
-          {/* Google button */}
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             className="
                   w-full mb-3
-                  rounded-lg
+                  rounded-md
                   bg-[#8B3DFF]
                   py-3 text-sm font-normal 
                   text-white
@@ -57,13 +54,12 @@ export function SignupModal() {
             Continue with Google
           </motion.button>
 
-          {/* Microsoft button */}
           <motion.button
             whileHover={{ scale: 1.03 }}
             whileTap={{ scale: 0.97 }}
             className="
                 w-full
-                rounded-lg
+                rounded-md
                 bg-[#4B4B4B]
                 py-3 text-sm font-normal 
                 text-white
@@ -78,9 +74,6 @@ export function SignupModal() {
             />
             Continue with Microsoft
           </motion.button>
-
-          {/* Terms */}
-          {/* Terms – outside modal */}
         </div>
         <p className="mt-1 max-w-sm text-center text-xs text-gray-400 leading-relaxed">
           By clicking “Continue with Google/Microsoft” above, you acknowledge
